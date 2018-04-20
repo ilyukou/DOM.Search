@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>DOM Searsh</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="../css/Style.css">
+  </head>
+
+  <body>
+
+    <div><form enctype="multipart/form-data" method="post">
+      <p>
+        <p>Tag</p><input type="text" name="files[]"  multiple="multiple" id="tag" />
+        <br>
+        <input type="file" name="files[]"  multiple="multiple" id="input" onchange="search()"/>
+        <input type="submit" value="Отправить"></p>
+      <output id="list2"></output></div>
+
+      <br>
+      <br>
+      <br>
+
+      <div id="drop_zone">Drop files here</div>
+      <output id="list"></output>
+
+      <script type="text/javascript" src="../script/Script.js"></script>
+
+
+  </body>
+</html>
