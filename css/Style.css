@@ -1,6 +1,6 @@
 body{
     text-align: center;
-    padding: 300px 300px 0 300px;
+    padding: 150px 300px 0 300px;
 }
 #drop_zone {
     border: 2px dashed #bbb;
@@ -14,4 +14,7 @@ body{
 }
 div {
     display: block;
+}
+.tag_name{
+    margin:40px;
 }
