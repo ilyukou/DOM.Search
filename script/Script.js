@@ -1,3 +1,4 @@
+
 function search() {
     var selectedFile = document.getElementById('input').files[0];
     selectedFile.textTransform ="none";
@@ -11,7 +12,7 @@ function handleFileSelect(evt) {
     evt.preventDefault();
 
     var files = evt.dataTransfer.files; // FileList object.
-    alert(files);
+    console.log(Object.values(files));
         // files is a FileList of File objects. List some properties.
     var output = [];
     for (var i = 0, f; f = files[i]; i++) {
@@ -19,6 +20,7 @@ function handleFileSelect(evt) {
             f.size, ' bytes, last modified: ',
             f.lastModifiedDate ? f.lastModifiedDate.toLocaleDateString() : 'n/a',
             '</li>');
+        alert(f);
     }
     document.getElementById('list').innerHTML = '<ul>' + output.join('') + '</ul>';
 }

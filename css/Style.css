@@ -1,6 +1,6 @@
 body{
     text-align: center;
-    padding: 200px;
+    padding: 300px 300px 0 300px;
 }
 #drop_zone {
     border: 2px dashed #bbb;
