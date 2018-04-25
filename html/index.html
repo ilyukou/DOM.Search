@@ -7,49 +7,16 @@
   </head>
 
   <body>
-
-      <div class="tag_name">
-        <p>Write need tag.</p>
-        <input type="text" name="files[]"/>
-      </div>
-
-      <div id="drop_zone">Drop files here</div>
-
-      <output id="list"></output>
-      <script type="text/javascript" src="../script/Script.js"></script>
-
-      <div class="info-file"></div>
-      <div class="tag_info"></div>
-      <br>
-      <br>
-
-
+    <p>Add file and later write tag</p>
       <input type="file" id="openFile" />
       <br>
-      <div id="info"></div>
-      <div id="test">
-
-
+      <div class="tag_name">
+          <p>Write tag <here></here>.</p>
+          <input type="text" id="find" onchange="search(this)" />
       </div>
-      <script>
-          /* var form = document.getElementById('test');
-
-          for (var i = 0; i < form.children.length; i++){
-            console.log('SELECTED:'+form.childNodes[i].getAttribute("code"));
-          } */
-          var parg = document.getElementById('div');
-          if (parg.hasChildNodes()) {
-              var children = parg.childNodes;
-
-              for (var i = 0; i < children.length; ++i) {
-                  alert(String(parg[i]));
-              }
-          }
-
-      </script>
+      <br>
+      <div id="info" ></div>
       <script type="text/javascript" src="../script/changeInput.js" ></script>
-
-
-
+      <script type="text/javascript" src="../script/Algoritm.js" ></script>
   </body>
 </html>
