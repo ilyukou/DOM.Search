@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>test</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="../css/Style.css">
+</head>
+
+<body>
+<div id="div">
+
+</div>
+<script>
+    /* var form = document.getElementById('test');
+
+    for (var i = 0; i < form.children.length; i++){
+      console.log('SELECTED:'+form.childNodes[i].getAttribute("code"));
+    } */
+
+    var parg = document.getElementById('div');
+    if (parg.hasChildNodes()) {
+        var children = parg.childNodes;
+
+        for (var i = 0; i < children.length; ++i) {
+            console.log(children[i].data);
+        }
+
+    };
+
+
+</script>
+<script src="../script/Script.js"></script>
+
+</body>
+</html>
