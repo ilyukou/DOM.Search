@@ -1,20 +1,31 @@
 body{
     text-align: center;
-    padding: 150px 300px 0 300px;
-}
-#drop_zone {
-    border: 2px dashed #bbb;
-    -moz-border-radius: 5px;
-    -webkit-border-radius: 5px;
-    border-radius: 5px;
-    padding: 25px;
-    text-align: center;
-    font: 20pt bold 'Vollkorn';
-    color: #bbb;
+    padding: 70px 100px 50px 100px;
 }
 div {
     display: block;
 }
 .tag_name{
     margin:40px;
+}
+#tagInfo{
+    padding: 15px;
+    border : 5px solid #90CAF9;
+    border-radius: 10px ;
+    color: #1E88E5;
+    background-color : #BBDEFB;
+}
+#info{
+    padding: 15px;
+    border : 5px solid #EBEBEB;
+    border-radius: 10px ;
+    background-color : #FAFAFA;
+
+}
+#inputBox{
+    padding: 15px;
+    border: 5px solid #d6e9c6;
+    border-radius: 10px;
+    color: #43A047;
+    background-color: #dff0d8;
 }
