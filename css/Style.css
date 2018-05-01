@@ -1,6 +1,6 @@
 body{
     text-align: center;
-    padding: 70px 100px 50px 100px;
+    padding: 50px;
 }
 div {
     display: block;
@@ -28,4 +28,12 @@ div {
     border-radius: 10px;
     color: #43A047;
     background-color: #dff0d8;
+}
+.footer{
+    margin-top: 15px;
+    padding: 15px;
+    border: 5px solid #FFD6D6;
+    border-radius: 10px;
+    color: #0077CD;
+    background-color: #FFF8D6;
 }
