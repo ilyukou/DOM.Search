@@ -9,6 +9,9 @@ div {
 .inputStr{
     margin:40px;
 }
+.inputTypeSearch{
+    margin-top: 15px;
+}
 #outputInfo{
     padding: 15px;
     border : 5px solid #90CAF9;

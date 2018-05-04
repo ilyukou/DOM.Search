@@ -12,6 +12,12 @@
       <h1 class="text">Add file and later write tag</h1>
       <input type="file" id="openFile" />
 
+      <form id="search" class="inputTypeSearch">
+        <input type="radio" name="TypeSearch" value="tag">Tag
+        <input type="radio" name="TypeSearch" value="class">Class
+        <input type="radio" name="TypeSearch" value="id">Id
+      </form>
+
       <div class="inputStr">
           <h3 class="text">Write need elements here.</h3>
           <input type="text" id="strFind" onchange="search(this)"/>
