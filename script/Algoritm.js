@@ -1,10 +1,10 @@
 function search(tagname) {
 
-    var tag = document.getElementById("find").value;
+    var tag = document.getElementById("strFind").value;
 
-    var divInfo = document.getElementById('info');
+    var divInfo = document.getElementById('htmInfo');
     var elem = divInfo.getElementsByTagName(tag);
-    var divInfoTag = document.getElementById('tagInfo');
+    var divInfoTag = document.getElementById('outputInfo');
 
     for(var i=0; i<elem.length; i++){
 

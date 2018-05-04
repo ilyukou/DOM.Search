@@ -8,31 +8,32 @@
 
   <body>
 
-    <div id="inputBox"><p>Add file and later write tag</p>
+    <div id="inputBox">
+      <h1 class="text">Add file and later write tag</h1>
       <input type="file" id="openFile" />
 
-      <br>
-      <div class="tag_name">
-
-          <p>Write tag here.</p>
-          <input type="text" id="find" onchange="search(this)" />
-      </div><br></div>
-
-      <P>You html input:</P>
-      <div id="info" class="info" ></div>
-
-      <P>Tag info:</P>
-      <div id="tagInfo"></div>
-
-      <div class="footer">
-        <p>Founder: <a href="https://github.com/ilyukou">Ilya Ilyukou</a></p>
-        <a href="https://github.com/ilyukou/DOM.Search">Update Project</a>
+      <div class="inputStr">
+          <h3 class="text">Write need elements here.</h3>
+          <input type="text" id="strFind" onchange="search(this)"/>
       </div>
+    </div>
 
-      <script type="text/javascript" src="../script/changeInput.js" ></script>
-      <script type="text/javascript" src="../script/Algoritm.js" ></script>
-      <script type="text/javascript" src="../script/jQuery.js" ></script>
+    <div>
+      <h2 class="text">You html input:</h2>
+      <div id="htmInfo" class="htmlInfo"></div>
+    </div>
 
+   <div>
+     <h2 class="text">Output info:</h2>
+     <div id="outputInfo"></div>
+   </div>
 
+    <div class="footer">
+      <h4 class="text">Founder: <a href="https://github.com/ilyukou">Ilya Ilyukou</a></h4>
+      <h4 class="text"><a href="https://github.com/ilyukou/DOM.Search" >Update Project</a></h4>
+    </div>
+
+    <script type="text/javascript" src="../script/changeInput.js" ></script>
+    <script type="text/javascript" src="../script/Algoritm.js" ></script>
   </body>
 </html>

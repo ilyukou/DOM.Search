@@ -1,21 +1,22 @@
 body{
     text-align: center;
     padding: 50px;
+    font-size: 18px;
 }
 div {
     display: block;
 }
-.tag_name{
+.inputStr{
     margin:40px;
 }
-#tagInfo{
+#outputInfo{
     padding: 15px;
     border : 5px solid #90CAF9;
     border-radius: 10px ;
     color: #1E88E5;
     background-color : #BBDEFB;
 }
-#info{
+#htmInfo{
     padding: 15px;
     border : 5px solid #EBEBEB;
     border-radius: 10px ;
@@ -31,9 +32,14 @@ div {
 }
 .footer{
     margin-top: 15px;
-    padding: 15px;
+    padding: 10px;
     border: 5px solid #FFD6D6;
     border-radius: 10px;
     color: #0077CD;
     background-color: #FFF8D6;
 }
+h1{font-size: 1em}
+h2{font-size: 0.9em}
+h3{font-size: 0.8em}
+h4{font-size: 0.7em}
+.text{font-weight: normal;}
