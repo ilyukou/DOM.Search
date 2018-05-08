@@ -1,4 +1,4 @@
-body{
+/*body{
     text-align: center;
     padding: 50px;
     font-size: 18px;
@@ -19,7 +19,7 @@ div {
     color: #1E88E5;
     background-color : #BBDEFB;
 }
-#htmInfo{
+#htmlInfo{
     padding: 15px;
     border : 5px solid #EBEBEB;
     border-radius: 10px ;
@@ -45,4 +45,7 @@ h1{font-size: 1em}
 h2{font-size: 0.9em}
 h3{font-size: 0.8em}
 h4{font-size: 0.7em}
-.text{font-weight: normal;}
+.text{font-weight: normal;}*/
+.content{
+    padding: 25px;
+}

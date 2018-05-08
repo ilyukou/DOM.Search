@@ -1,44 +1,89 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>DOM Searsh</title>
-    <meta charset="utf-8">
-    <link rel="stylesheet" type="text/css" href="../css/Style.css">
+      <title>DOM Searsh</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <!-- Последняя компиляция и сжатый CSS -->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+      <!-- Дополнение к теме -->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+      <!-- Последняя компиляция и сжатый JavaScript -->
+     <link rel="stylesheet" type="text/css" href="../css/Style.css">
   </head>
-
   <body>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button class="navbar-toggle" data-toogle="collapse" data-target=".navbar-collapse">
 
-    <div id="inputBox">
-      <h1 class="text">Add file and later write tag</h1>
-      <input type="file" id="openFile" />
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
 
-      <form id="search" class="inputTypeSearch">
-        <input type="radio" name="TypeSearch" value="tag">Tag
-        <input type="radio" name="TypeSearch" value="class">Class
-        <input type="radio" name="TypeSearch" value="id">Id
-      </form>
-
-      <div class="inputStr">
-          <h3 class="text">Write need elements here.</h3>
-          <input type="text" id="strFind" onchange="search(this)"/>
-      </div>
+                </button>
+                <a class="navbar-brand" href="#">Ilyukou</a>
+            </div>
+            <div class="navbar-collapse collapse">
+                <form class="navbar-form navbar-right">
+                    <div class="form-group">
+                        <input type="text" placeholder="Email" name="" value="" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <input type="password" placeholder="Password" name="" value="" class="form-control">
+                    </div>
+                    <button type="submit" class="btn btn-success " pla>Run</button>
+                </form>
+            </div>
+        </div>
     </div>
 
-    <div>
-      <h2 class="text">You html input:</h2>
-      <div id="htmInfo" class="htmlInfo"></div>
+    <div class="jumbotron">
+        <div class="container content">
+            <!--<div id="inputBox">-->
+                <p class="text">Add file and later write tag</p>
+                <input type="file" id="openFile" />
+
+                <form id="search" class="inputTypeSearch">
+                    <input type="radio" name="TypeSearch" value="tag">Tag
+                    <input type="radio" name="TypeSearch" value="class">Class
+                    <!--<input type="radio" name="TypeSearch" value="id">Id -->
+                </form>
+
+                <div class="inputStr">
+                    <p class="text">Write need elements here.</p>
+                    <input type="text" id="strFind" onchange="search(this)"/>
+                </div>
+            <!--</div>-->
+        </div>
     </div>
-
-   <div>
-     <h2 class="text">Output info:</h2>
-     <div id="outputInfo"></div>
-   </div>
-
-    <div class="footer">
+    <div class="container content">
+        <div class="row">
+            <div class="col-lg-4">
+                    <p class="text bg-primary col-lg-5">You html input:</p>
+                    <br>
+                    <div id="htmlInfo" class="htmlInfo bg-info"></div>
+            </div>
+            <div class="col-lg-4">
+                    <p class="text bg-primary col-lg-4">Output info:</p>
+                    <br>
+                    <div id="outputInfo" class="bg-success"></div>
+            </div>
+        </div>
+        <hr>
+        <footer>
+            <p>Open Source Project</p>
+            <a href="https://github.com/ilyukou/DOM.Search">Code</a>
+            <a href="https://github.com/ilyukou">Founder</a>
+        </footer>
+    </div>
+    <!-- <div class="footer">
       <h4 class="text">Founder: <a href="https://github.com/ilyukou">Ilya Ilyukou</a></h4>
       <h4 class="text"><a href="https://github.com/ilyukou/DOM.Search" >Update Project</a></h4>
-    </div>
+    </div> -->
 
+    <script src="../script/jQuery.js" rel="script" type="text/javascript"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <script type="text/javascript" src="../script/changeInput.js" ></script>
     <script type="text/javascript" src="../script/Algoritm.js" ></script>
   </body>
