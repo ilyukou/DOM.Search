@@ -27,10 +27,10 @@
             <div class="navbar-collapse collapse">
                 <form class="navbar-form navbar-right">
                     <div class="form-group">
-                        <input type="text" placeholder="Email" name="" value="" class="form-control">
+                        <input type="text" placeholder="Email, didn't work" name="" value="" class="form-control">
                     </div>
                     <div class="form-group">
-                        <input type="password" placeholder="Password" name="" value="" class="form-control">
+                        <input type="password" placeholder="Password, yes, is too" name="" value="" class="form-control">
                     </div>
                     <button type="submit" class="btn btn-success " pla>Run</button>
                 </form>
@@ -41,46 +41,47 @@
     <div class="jumbotron">
         <div class="container content">
             <!--<div id="inputBox">-->
-                <p class="text">Add file and later write tag</p>
-                <input type="file" id="openFile" />
+                <p class="text cont">Add file and later write tag</p>
+                <input  type="file" id="openFile" />
 
-                <form id="search" class="inputTypeSearch">
+                <form id="search" class="inputTypeSearch cont">
                     <input type="radio" name="TypeSearch" value="tag">Tag
-                    <input type="radio" name="TypeSearch" value="class">Class
+                    <input type="radio" name="TypeSearch" value="class" >Class
                     <!--<input type="radio" name="TypeSearch" value="id">Id -->
                 </form>
 
-                <div class="inputStr">
-                    <p class="text">Write need elements here.</p>
-                    <input type="text" id="strFind" onchange="search(this)"/>
+                <div class="inputStr cont">
+                    <p class="text" >Write need elements here.</p>
+                    <input type="text" id="strFind" onchange="search(this)" />
                 </div>
             <!--</div>-->
         </div>
     </div>
-    <div class="container content">
+
+    <div class="container">
         <div class="row">
-            <div class="col-lg-4">
-                    <p class="text bg-primary col-lg-5">You html input:</p>
-                    <br>
-                    <div id="htmlInfo" class="htmlInfo bg-info"></div>
-            </div>
-            <div class="col-lg-4">
-                    <p class="text bg-primary col-lg-4">Output info:</p>
-                    <br>
-                    <div id="outputInfo" class="bg-success"></div>
-            </div>
+                <div class="panel panel-info col-lg-6">
+                    <div class="panel-heading">HTML input</div>
+                    <div class="panel-body">
+                        <div id="htmlInfo" class="htmlInfo"></div>
+                    </div>
+                </div>
+                <div class="panel panel-success col-lg-6">
+                    <div class="panel-heading">Output tag/class</div>
+                    <div class="panel-body">
+                        <div id="outputInfo"></div>
+                    </div>
+                </div>
         </div>
         <hr>
-        <footer>
-            <p>Open Source Project</p>
-            <a href="https://github.com/ilyukou/DOM.Search">Code</a>
-            <a href="https://github.com/ilyukou">Founder</a>
-        </footer>
+        <div class="row footer">
+            <div class="col-lg-12">
+                <p class="col-lg-2">Open Source Project</p>
+                <a class="col-lg-1" href="https://github.com/ilyukou/DOM.Search">Code</a>
+                <a class="col-lg-1" href="https://github.com/ilyukou">Founder</a>
+            </div>
+        </div>
     </div>
-    <!-- <div class="footer">
-      <h4 class="text">Founder: <a href="https://github.com/ilyukou">Ilya Ilyukou</a></h4>
-      <h4 class="text"><a href="https://github.com/ilyukou/DOM.Search" >Update Project</a></h4>
-    </div> -->
 
     <script src="../script/jQuery.js" rel="script" type="text/javascript"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>

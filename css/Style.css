@@ -47,5 +47,9 @@ h3{font-size: 0.8em}
 h4{font-size: 0.7em}
 .text{font-weight: normal;}*/
 .content{
-    padding: 25px;
+    padding-left: calc(35%);
 }
+.cont{
+    margin: calc(2% );
+}
+
